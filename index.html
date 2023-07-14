@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HLS Downloader</title>
+</head>
+<body>
+    <h1>HLS Downloader</h1>
+    <form method="post" action="/">
+        <input type="text" name="hls_link" placeholder="Paste HLS link" required>
+        <input type="submit" value="Download">
+    </form>
+    {% if downloaded %}
+        <p>Video downloaded successfully! Click the button below to download.</p>
+        <a href="/download" class="btn">Download Video</a>
+    {% endif %}
+</body>
+</html>
